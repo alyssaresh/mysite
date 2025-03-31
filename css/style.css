@@ -153,6 +153,26 @@ section.service .text a {
     font-family: "Space Mono", serif;
 }
 
+/* service section animations */
+
+section.service.service-html figure img {
+    animation-name: float;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
 /* service section overrides */
 
 section.service.service-html figure {
@@ -189,12 +209,19 @@ section.contact {
     justify-content: center;
     background: linear-gradient(var(--blue), var(--green) 20%, var(--pink) 70%, var(--grey));
     border-radius: var(--border-radius);
+    mix-blend-mode: difference;
 }
 
 section.contact a {
     font-size: 100px;
     color: #000000;
     font-weight: bold;
+    transition: filter 2s;
+    will-change: filter;
+}
+
+section.contact a:hover {
+    filter: blur(20px);
 }
 
 /* responsive for mobile */
