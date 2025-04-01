@@ -172,6 +172,40 @@ section.service.service-html figure img {
     }
 }
 
+@keyframes scale {
+    0% {
+        transform: scale(none);
+    }
+    100% {
+        transform: scale(90%);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(none);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section.service.service-css figure img {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+section.service.service-js figure img {
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
 
 /* service section overrides */
 
