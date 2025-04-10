@@ -1,0 +1,24 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm run prebuild && parcel",
+    "build": "parcel build",
+    "prebuild": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssaresh/mysite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyssaresh/mysite/issues"
+  },
+  "homepage": "https://github.com/alyssaresh/mysite#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
