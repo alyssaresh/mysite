@@ -249,7 +249,6 @@ section.contact {
     justify-content: center;
     background: linear-gradient(var(--blue), var(--green) 20%, var(--pink) 70%, var(--grey));
     border-radius: var(--border-radius);
-    mix-blend-mode: difference;
 }
 
 section.contact a {
